@@ -1,0 +1,14 @@
+# This is a single-stage build (The "Heavy" way)
+FROM golang:1.22-alpine
+
+# Set the working directory
+WORKDIR /app
+
+# Copy all files from the current directory to the container
+COPY . .
+
+# Build the Go application
+RUN go build -o calculator main.go
+
+# Run the application
+CMD ["./calculator"]
