@@ -25,7 +25,7 @@ By moving to a multi-stage architecture, I achieved a massive reduction in image
 calculator   slim          f8edd7d0e932   47 seconds ago       10.5MB
 calculator   heavy         63c601e84639   About a minute ago   260MB
 
-| :--- | :--- | :--- |
+
 | **Single-Stage (`Dockerfile.heavy`)** | ~260 MB | ❌ Inefficient |
 | **Multi-Stage (`Dockerfile`)** | **~10.5 MB** | ✅ Optimized |
 
